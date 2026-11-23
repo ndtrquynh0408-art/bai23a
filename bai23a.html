@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game kiểm tra tốc độ phản xạ</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>GAME KIỂM TRA TỐC ĐỘ PHẢN XẠ</h1>
+
+    <div class="info">
+        <div>Điểm: <span id="score">0</span></div>
+        <div>Thời gian: <span id="time">30</span> giây</div>
+    </div>
+
+    <div class="controls">
+        <label for="duration">Chọn thời gian chơi:</label>
+
+        <select id="duration">
+            <option value="10">10 giây</option>
+            <option value="20">20 giây</option>
+            <option value="30" selected>30 giây</option>
+            <option value="60">60 giây</option>
+        </select>
+
+        <button id="startBtn">Bắt đầu trò chơi</button>
+        <button id="colorBtn">Đổi màu nền</button>
+        <button id="playerBtn">Người chơi</button>
+    </div>
+
+    <div id="playerInfo"></div>
+
+    <div id="arena">
+        <div id="target"></div>
+    </div>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

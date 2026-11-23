@@ -1,0 +1,125 @@
+
+/* Thiết lập chung cho toàn bộ trang web */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Thiết kế phần thân trang */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #eaf2f8;
+    padding: 30px;
+}
+
+/* Tiêu đề trò chơi */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Khu vực hiển thị điểm và thời gian */
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Màu sắc điểm số */
+#score {
+    color: #27ae60;
+}
+
+/* Màu sắc thời gian */
+#time {
+    color: #e74c3c;
+}
+
+/* Khu vực chứa các nút */
+.controls {
+    margin: 20px;
+}
+
+/* Thiết kế nút và hộp chọn thời gian */
+button, select {
+    padding: 12px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* Thiết kế các nút */
+button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hiệu ứng khi rê chuột lên nút */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Nút bị khóa */
+button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+/* Thông tin người chơi */
+#playerInfo {
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8e44ad;
+}
+
+/* Khu vực chơi */
+#arena {
+    width: 600px;
+    height: 400px;
+    background-color: #d6eaf8;
+    border: 3px solid #3498db;
+    border-radius: 10px;
+    margin: 25px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hình tròn mục tiêu */
+#target {
+    width: 35px;
+    height: 35px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+/* Kết quả trò chơi */
+#result {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+/* Điều chỉnh giao diện trên màn hình nhỏ */
+@media (max-width: 650px) {
+    #arena {
+        width: 95%;
+        height: 350px;
+    }
+
+    .info {
+        gap: 20px;
+        font-size: 17px;
+    }
+}
